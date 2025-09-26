@@ -1,0 +1,38 @@
+/*
+    Author:Santeri Saari
+    Date: 23-09-2025
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #ffffff;
+    margin-top: 1em;
+    font-size: 2rem;
+}
+
+h2 {
+    color: #ffffff;
+    margin-top: 1em;
+    font-size: 1.5rem;
+}
+
+p {
+    color: #ffffff;
+
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
