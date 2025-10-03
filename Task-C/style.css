@@ -12,6 +12,7 @@ body {
 }
 
 h1 {
+    text-align: center;
     color: #ffffff;
     margin-top: 1em;
     margin: 0.5rem auto;
@@ -28,6 +29,7 @@ h2 {
 }
 
 p {
+    text-align: center;
     color: #ffffff;
     margin: 0.5rem auto;
     padding: 0 1rem;
@@ -36,7 +38,7 @@ p {
 
 a {
     color: #3498db;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:visited {
@@ -45,7 +47,7 @@ a:visited {
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 
@@ -69,22 +71,26 @@ ol li {
 }
 
 img {
-    position: center;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
     margin: 1rem auto;
     width: 100%;
     max-width: 500px;
-    height: auto;
+    height: 50%;
+    max-height: 600px;
 }
 
-audio {
-    position: center;
+audio { 
     display: block;
     margin: 1rem auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 video {
-    position: center;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
     margin: 1rem auto;
     width: 100%;
