@@ -9,66 +9,76 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="text-gray-50 bg-gray-100 font-arial font-text-md md:text-lg sm:text-xl">
   <!--
     Author: Santeri Saari
     Date: 13-11-2025
   -->
 
-  <header class="site-header">
-    <h1>Registration Page</h1>
+  <header class="py-6 bg-gray-800 mb-8 border-b-2 border-gray-500">
+    <h1 class="text-2xl font-bold text-center">Registration Page</h1>
   </header>
 
-  <main class="content">
-    <!-- Top row split into two blocks -->
-    <div class="top-grid">
-      <!-- Student info (30%) -->
-      <section class="student-info" aria-label="Student information">
-        <h2 class="student-info-title">Information</h2>
-        <p><span class="student-name">Santeri Saari</span></p>
-        <p><span class="student-group">NTIS20K</span></p>
-      </section>
+  <main class="grid grid-cols-1 grid-rows-1 grid-flow-row gap-1 mx-4 text-gray-800">
 
-      <!-- Controls (70%): add course + day marks -->
-      <section class="controls" aria-label="Add course row">
-        <h2 class="controls-title">Add Info</h2>
-
-        <form id="addInformationForm" method="post" onsubmit="return createRow();">
+    <section class="items-start w-full bg-gray-100 rounded shadow-lg ring-1 ring-gray-800 lg:max-w-md" aria-label="Add course row">
+        <div class="bg-gray-800  border-b-2 border-gray-500 text-gray-50">
+            <h2 class="text-xl text-center font-bold">Information Form</h2> 
+        </div>
+       
+        
+        <form class="p-1" id="addInformationForm" method="post" onsubmit="return createRow();">
             <div class="secondFormRow">
                 <input type="hidden" id="timeStamp" value="">
-                <label for="fullName">Full Name</label><br>
-                <input id="fullName" name="fullName" type="text" minlength="5" maxlength="50" required placeholder="e.g., Santeri Saari"><br>
-                <label for="email">Email</label><br>
-                <input id="email" name="email" type="email" required placeholder="e.g., ss@gmail.com"><br>
-                <label for="phoneNumber">Phone Number(Enter as +358-XX-XXX-XXXX, hyphens can be omitted)</label><br>
-                <input id="phoneNumber" name="phoneNumber" type="tel" maxlength="20" pattern="^[+]{1}358-?[0-9]{2}-?[0-9]{3}-?[0-9]{4}$" required placeholder="ex. +358-44-234-5450"><br>
-                <label for="birthDate">Date of Birth</label><br>
-                <input id="birthDate" name="birthDate" type="date" min="1940-01-01" max="2015-12-31" required><br>
-                <label for="accept">Accept Terms</label><br>
-                <input id="accept" name="accept" type="checkbox" required><br>
-                <button type="submit">Submit Information</button>
-                <button type="reset">Reset</button>
-
-
+                <div class="">
+                    <label class="text-sm sm:lg" for="fullName">Full Name</label><br>
+                    <input class="border border-b-1 border-gray-500" id="fullName" name="fullName" type="text" minlength="5" maxlength="50" required placeholder="e.g., Santeri Saari"><br>
+                </div>
+                <div>
+                    <label class="text-sm sm:lg" for="email">Email</label><br>
+                    <input class="border border-b-1 border-gray-500" id="email" name="email" type="email" required placeholder="e.g., ss@gmail.com"><br>
+                </div>
+                <div>
+                    <label class="text-sm sm:lg" for="phoneNumber">Phone Number(Enter as +358-XX-XXX-XXXX)</label><br>
+                    <input class="border border-b-1 border-gray-500" id="phoneNumber" name="phoneNumber" type="tel" maxlength="20" pattern="^[+]{1}358-?[0-9]{2}-?[0-9]{3}-?[0-9]{4}$" required placeholder="ex. +358-44-234-5450"><br>
+                </div>
+                <div>
+                    <label class="text-sm sm:lg" for="birthDate">Date of Birth</label><br>
+                    <input class="border border-b-1 border-gray-500" id="birthDate" name="birthDate" type="date" min="1940-01-01" max="2015-12-31" required><br>
+                </div>
+                <div>
+                    <label class="text-sm sm:lg" for="accept">Accept Terms</label><br>
+                    <input class="border border-b-1 border-gray-500" id="accept" name="accept" type="checkbox" required><br>
+                </div>
+                <div>
+                    <button class="bg-gray-800 hover:bg-green-800 text-white px-1 py-1 rounded" type="submit">Submit Information</button>
+                    <button class="bg-gray-800 hover:bg-green-800 text-white px-1 py-1 rounded" type="reset">Reset</button>
+                </div>
             </div>
         </form>
-      </section>
-    </div>
+    </section>
 
     <!-- Table -->
-    <div class="table-wrap">
-      <table class="table" id="timetable">
-        <thead>
+    <div class="col-span-2 text-center text-gray-50 w-full h-full overflow-scroll bg-gray-100 rounded shadow-lg ring-1 ring-gray-800">
+      <table class="w-full text-center table-auto min-w-max" id="timetable">
+        <thead class="py-6 px-3 bg-gray-800 mb-8 border-b-2 border-gray-500">
           <tr>
-            <th>Timestamp</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Phone Number</th>
-            <th>Date of Birth</th>
+            <th class="px-3">Timestamp</th>
+            <th class="px-3">Name</th>
+            <th class="px-3">Email</th>
+            <th class="px-3">Phone Number</th>
+            <th class="px-3">Date of Birth</th>
+            <th class="px-3">Terms Accepted</th>
           </tr>
         </thead>
-        <tbody id ="tableBody">
+        <tbody class="text-gray-800 text-sm sm:text-xl md:text-lg" id ="tableBody">
           <!-- Rows will be added here dynamically -->
+            <td>2025-11-14T17:56:16.823Z</td>
+            <td>dasdasdsadasdasdas</td>
+            <td>ss99@gmail.com</td>
+            <td>+358442235234</td>
+            <td>2015-12-09</td>
+            <td>✅</td>
         </tbody>
       </table>
     </div>
