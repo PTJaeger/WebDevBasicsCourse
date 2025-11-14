@@ -1,6 +1,6 @@
 // index.js
 // Author: Santeri Saari
-// Date: 06-11-2025
+// Date: 13-11-2025
 
 //Set timestamp, get cell values and append row to table
 function createRow() {

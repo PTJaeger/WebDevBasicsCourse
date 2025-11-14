@@ -11,6 +11,7 @@ function createRow() {
     var email = document.getElementById("email").value;
     var phoneNumber = document.getElementById("phoneNumber").value;
     var birthDate = document.getElementById("birthDate").value;
+    var acceptTerms = document.getElementById("accept").checked ? "&#9989;" : "&#10060;";
     // Validation redundancy checks
     if (fullName === "" || email === "" || phoneNumber === "" || birthDate === "") {
         alert("Please fill in all fields.");
@@ -24,7 +25,7 @@ function createRow() {
     else {
         var newRow= ""; 
         
-        newRow="<tr><td>" + timeStamp + "</td><td>" + fullName + "</td><td>" + email + "</td><td>" + phoneNumber + "</td><td>" + birthDate + "</td></tr>";
+        newRow="<tr><td>" + timeStamp + "</td><td>" + fullName + "</td><td>" + email + "</td><td>" + phoneNumber + "</td><td>" + birthDate + "</td><td>" + acceptTerms + "</td></tr>";
         document.getElementById("tableBody").innerHTML += newRow;
     }
     
