@@ -129,7 +129,7 @@ div.gallery h2 {
 
 div.gallery-item {
   margin: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color);
   width: 400px;
 }
 
@@ -169,14 +169,16 @@ ul {
 }
 
 ul li {
-            float: left;
+    float: left;
 }
 ul li a {
-            display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    border-left: black 1px solid;
+    border-right: black 1px solid;
 }
 ul li a:hover {
             background-color: #111111;
