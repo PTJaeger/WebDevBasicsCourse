@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Rental Ordering</h1>
+    </header>
+    <div class="sidebar">
+            <ul>
+                <li><a href="https://ptjaeger.github.io/WebDevBasicsCourse/Task-I/index.html">Home</a></li>
+                <li><a href="https://ptjaeger.github.io/WebDevBasicsCourse/Task-I/index.html#about">About</a></li>
+                <li><a href="https://ptjaeger.github.io/WebDevBasicsCourse/Task-I/index.html#services">Services</a></li>
+                <li><a href="https://ptjaeger.github.io/WebDevBasicsCourse/Task-I/index.html#gallery">Gallery</a></li>
+                <li><a href="https://ptjaeger.github.io/WebDevBasicsCourse/Task-J/catalog.html">Catalogue</a></li>
+                <li><a class="active" href="https://ptjaeger.github.io/WebDevBasicsCourse/Task-K/order.html">Order</a></li>
+
+            </ul>
+        </div>
+
+<main class="main-container">        
+        <section class="text">
+            <p>Please fill out the form below to place your rental order. Ensure all required fields are completed accurately.</p>
+        </section>
+    <form action="confirm.html" method="post" autocomplete="on">
+
+        
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required autocomplete="name">
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+
+        <label for="phonenumber">Phone Number</label>
+        <input type="tel" id="phonenumber" name="phonenumber" required autocomplete="tel">
+
+        <label for="product">Product</label>
+        <select id="product" name="product" required>
+            <option value="">-- Select a rental option --</option>
+            <option value="product1">Liebherr LTM 1070-4.2</option>
+            <option value="product2">Liebherr LTM 1200-5.1</option>
+            <option value="product3">Tadano ATF 90G-4</option>
+            <option value="product4">Liebherr LTM 1130-5.1</option>
+            <option value="product5">Liebherr LTM 1500-8.1</option>
+            <option value="product6">Liebherr LTM 1450-8.1</option>     
+        </select>
+
+        <label for="durationstart">Rental Start Date</label>
+        <input type="date" id="durationstart" name="durationstart" min="2025-12-12" required>
+
+        <label for="durationend">Rental End Date</label>
+        <input type="date" id="durationend" name="durationend" min="2025-12-12" required>
+
+        <label for="notes">Additional Notes and Instructions</label>
+        <textarea id="notes" name="notes" rows="3"></textarea>
+
+        <label for="terms">Agree to the terms and conditions</label>
+        <input type="checkbox" id="terms" name="terms" required>
+            
+
+        <button type="submit">Submit Order</button>
+    </form>
+        
+
+</main>
+    <footer>        
+        &copy; 2025 Acme Rentals. All rights reserved. Contact us at Inquiries@Acme.com or Support:Support@Acme.com   
+    </footer>
+</body>
+</html>
