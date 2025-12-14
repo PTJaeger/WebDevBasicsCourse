@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Acme Rentals</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
 </head>
 <body>
@@ -11,81 +13,89 @@
         <h1>Acme Crane Rentals</h1>
         <h2>Your trusted partner for heavy lifting solutions</h2>
     </header>
-
-    <div class="sidebar">
+        <div class="sidebar">
             <ul>
                 <li><a class="active" href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#gallery">Gallery</a></li>
-                <li><a href="https://ptjaeger.github.io/WebDevBasicsCourse/Task-J/catalog.html">Catalogue</a></li>
-                <li><a href="https://ptjaeger.github.io/WebDevBasicsCourse/Task-K/order.html">Order</a></li>
+                <li><a href="catalog.html">Catalogue</a></li>
+                <li><a href="order.html">Order</a></li>
             </ul>
         </div>
+    <section class="main-container">
 
-    <section class="grid-container">
         
-        <div id="home">
-            <h2>Welcome to Acme Crane Rentals</h2>
-            <p>
-                Our team of experts delivers high-quality services tailored to your needs. Be it construction, organizing events or heavy-duty lifting, we provide the machinery that you require to succeed. <br>
+
+        <section class="grid-container">
+        
+            <div id="home">
+                <h2>Welcome to Acme Crane Rentals</h2>
+                <p>
+                Our team of experts delivers high-quality services tailored to your needs. <br>
+                Be it construction, organizing events or heavy-duty lifting, we provide the machinery that you require to succeed. <br>
                 Explore our wide range of cranes and equipment available for rent at competitive prices. 
-            </p>
-            <a href="#" class="cta-btn">See our current offers now</a> <a href="catalog.html" class="cta-btn">Browse the catalogue</a>
-        </div>
+                </p>
+                <a href="#" class="cta-btn">See our current offers now</a> <a href="catalog.html" class="cta-btn">Browse the catalogue</a>
+            </div>
 
-        <div id="about">
-            <h2>About Us</h2>
-            <p>
-                Acme Rentals has been a leader in the rental industry for over 20 years.  We specialize in providing top-of-the-line cranes and heavy machinery to clients across various industries. Our extensive fleet includes mobile cranes, tower cranes, and specialized lifting equipment to meet the diverse needs of our customers.
-                Our commitment to excellence and customer satisfaction is what sets us apart and has kept us ahead of the competition. We pride ourselves on our reliable equipment, competitive pricing, and exceptional customer service. Our teams are with the customer every step of the way. <br>
-            </p>
-        </div>
+            <div id="about">
+                <h2>About Us</h2>
+                <p>
+                Acme Rentals has been a leader in the rental industry for over 20 years.<br><br>
+                We specialize in providing top-of-the-line cranes and heavy machinery to clients across various industries and our extensive fleet includes mobile cranes, tower cranes, and specialized lifting equipment to meet the diverse needs of our customers. <br><br>
+                Our commitment to excellence and customer satisfaction is what sets us apart and has kept us ahead of the competition. <br><br>
+                We pride ourselves on our reliable equipment, competitive pricing, and exceptional customer service. Our teams are with the customer every step of the way. <br>
+                </p>
+            </div>
 
-        <div class ="services-section">
+        
             <div id="services">
                 <h2>Our Services</h2>
                 <p>We provide a number of services to our clients aside from rentals. We are committed to offering free maintenance and repairs for the duration of any rental agreement. As well as that, we offer a consulting service so that you can work our experts to determine what is right for your project.
 
                 </p>
             </div>
-        </div>
         
 
-    </section>
+        </section>
 
-    <section class="contact-section">
-        
-        <div class="gallery" id="gallery">
+        <section class="gallery-header" id="gallery">
             <h2>Gallery</h2>
-            <div class="gallery-item">
-                    <a target="_blank" href="https://t4.ftcdn.net/jpg/01/26/17/01/360_F_126170149_CLuRA3dv8zFF3D6tER9EDpf5Z8n9r9bt.jpg">
-                    <img src="https://t4.ftcdn.net/jpg/01/26/17/01/360_F_126170149_CLuRA3dv8zFF3D6tER9EDpf5Z8n9r9bt.jpg" alt="CraneExample1" width="600" height="400"></a>
-                <div class="desc">A small part of our fleet of machines</div>
-            </div>
-
-            <div class="gallery-item">
-                    <a target="_blank" href="https://i.pinimg.com/736x/8a/8b/6c/8a8b6c8b19e4ec080fc08e5b185b18a2.jpg">
-                    <img src="https://i.pinimg.com/736x/8a/8b/6c/8a8b6c8b19e4ec080fc08e5b185b18a2.jpg" alt="CraneExample" width="600" height="400"></a>
-                <div class="desc">We have something for every task</div>
-            </div>
-
-            <div class="gallery-item">
-                    <a target="_blank" href="https://t3.ftcdn.net/jpg/00/22/43/58/360_F_22435844_WOsydnWjBjCfdAaGId0CxXk0ahEOWeqs.jpg">
-                    <img src="https://t3.ftcdn.net/jpg/00/22/43/58/360_F_22435844_WOsydnWjBjCfdAaGId0CxXk0ahEOWeqs.jpg" alt="CraneExample3" width="600" height="400"></a>
-                <div class="desc">We offer only the best</div>
-            </div>
-
-            <div class="gallery-item">
-                    <a target="_blank" href="https://media.istockphoto.com/id/476840682/photo/mobile-crane.jpg?s=612x612&w=0&k=20&c=bP46DQNdtH057s1fp5jMfTuc466Hg-r4L9sNSISbXeU=">
-                    <img src="https://media.istockphoto.com/id/476840682/photo/mobile-crane.jpg?s=612x612&w=0&k=20&c=bP46DQNdtH057s1fp5jMfTuc466Hg-r4L9sNSISbXeU=" alt="CraneExample4" width="600" height="400"></a>
-                <div class="desc">Machinery you can rely upon</div>
-            </div>
-        </div>
-
+        </section>
         
+            <div class="gallery-section">
+                <div class="gallery-item">
+                    
+                        <a target="_blank" href="https://t4.ftcdn.net/jpg/01/26/17/01/360_F_126170149_CLuRA3dv8zFF3D6tER9EDpf5Z8n9r9bt.jpg">
+                        <img src="https://t4.ftcdn.net/jpg/01/26/17/01/360_F_126170149_CLuRA3dv8zFF3D6tER9EDpf5Z8n9r9bt.jpg" alt="CraneExample1" width="600" height="400"></a>
+                    <div class="desc">1 / 4</div>
+                </div>
+
+                <div class="gallery-item">
+                    
+                        <a target="_blank" href="https://i.pinimg.com/736x/8a/8b/6c/8a8b6c8b19e4ec080fc08e5b185b18a2.jpg">
+                        <img src="https://i.pinimg.com/736x/8a/8b/6c/8a8b6c8b19e4ec080fc08e5b185b18a2.jpg" alt="CraneExample" width="600" height="400"></a>
+                    <div class="desc">2 / 4</div>
+                </div>
+
+                <div class="gallery-item">
+                    
+                        <a target="_blank" href="https://t3.ftcdn.net/jpg/00/22/43/58/360_F_22435844_WOsydnWjBjCfdAaGId0CxXk0ahEOWeqs.jpg">
+                        <img src="https://t3.ftcdn.net/jpg/00/22/43/58/360_F_22435844_WOsydnWjBjCfdAaGId0CxXk0ahEOWeqs.jpg" alt="CraneExample3" width="600" height="400"></a>
+                    <div class="desc">3 / 4</div>
+                </div>
+
+                <div class="gallery-item">
+                    
+                        <a target="_blank" href="https://media.istockphoto.com/id/476840682/photo/mobile-crane.jpg?s=612x612&w=0&k=20&c=bP46DQNdtH057s1fp5jMfTuc466Hg-r4L9sNSISbXeU=">
+                        <img src="https://media.istockphoto.com/id/476840682/photo/mobile-crane.jpg?s=612x612&w=0&k=20&c=bP46DQNdtH057s1fp5jMfTuc466Hg-r4L9sNSISbXeU=" alt="CraneExample4" width="600" height="400"></a>
+                    <div class="desc">4 / 4</div>
+                </div>
+
+            </div>
+
     </section>
-  
     <footer>
         &copy; 2025 Acme Rentals. All rights reserved. Contact us at Inquiries@Acme.com or Support:Support@Acme.com
     </footer>
