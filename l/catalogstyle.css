@@ -130,6 +130,14 @@ button {
 button:hover {
           background: #003e8a;  
 }
+
+.item-action a {
+            color: var(--text-color);
+            text-decoration: underline;
+}
+.item-action a:visited {
+            color: var(--link-clicked-colour);
+}
 footer {
             text-align: center;
             padding: 1rem 0;

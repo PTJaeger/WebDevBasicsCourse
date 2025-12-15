@@ -104,6 +104,9 @@ input, select, textarea {
     .sidebar ul li {
         float: none;
     }
+    form {   
+        max-width: fit-content;
+    }
 }
 
 @media (max-width: 1175px) {
@@ -116,6 +119,8 @@ input, select, textarea {
     }
 
 }
+
+
 ul {
     list-style-type: none;
     margin: 0;
