@@ -97,6 +97,13 @@ input, select, textarea {
     .main-container {
         padding: 0 0.5rem;
     }
+    .sidebar {
+        width: 100%;
+        position: relative;
+    }
+    .sidebar ul li {
+        float: none;
+    }
 }
 
 @media (max-width: 1175px) {

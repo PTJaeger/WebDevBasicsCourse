@@ -70,6 +70,20 @@ p {
     .catalogue-container {
         padding: 0 0.5rem;
     }
+    .sidebar {
+        width: 100%;
+        position: relative;
+    }
+    .sidebar ul li {
+        float: none;
+    }
+    .video-section video {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
 }
 ul {
     list-style-type: none;
