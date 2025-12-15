@@ -104,6 +104,7 @@ input, select, textarea {
         float: none;
     }
     form {   
+        width: 100%;
         max-width: fit-content;
     }
 }
@@ -123,6 +124,27 @@ input, select, textarea {
         float: none;
     }
     form {   
+        width: 100%;
+        max-width: fit-content;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 1rem 0.5rem;
+    }
+    .main-container {
+        padding: 0 0.5rem;
+    }
+    .sidebar {
+        width: 100%;
+        position: relative;
+    }
+    .sidebar ul li {
+        float: none;
+    }
+    form {   
+        width: 100%;
         max-width: fit-content;
     }
 }
